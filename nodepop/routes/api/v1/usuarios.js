@@ -94,7 +94,7 @@ router.post('/', function (req, res) {
     // Validaciones del modelo
     var errors = usuario.validateSync();
     if (errors) {
-        debug(config.errors.error400, 'POST/', err);
+        debug(config.errors.error400, 'POST/', errors);
         return res.status(400).json({success: false, error: translator(req, config.errors.error400)});
     }
 
