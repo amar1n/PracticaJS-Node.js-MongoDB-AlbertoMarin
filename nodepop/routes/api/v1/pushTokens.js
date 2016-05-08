@@ -17,6 +17,7 @@ var translator = require('myi18n');
  * @apiParam {String} plataforma Uno de los siguientes valores 'ios', 'android'
  * @apiParam {String} token Token para push notifications
  * @apiParam {String} usuario Usuario asociado
+ * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
  * endpoint: http://localhost:3000/api/v1/pushtokens
  *
@@ -70,6 +71,7 @@ router.post('/', function (req, res) {
  * @apiParam {String} plataforma Uno de los siguientes valores 'ios', 'android'
  * @apiParam {String} token Token para push notifications
  * @apiParam {String} usuario Usuario asociado
+ * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
  * endpoint: http://localhost:3000/api/v1/pushtokens
  *

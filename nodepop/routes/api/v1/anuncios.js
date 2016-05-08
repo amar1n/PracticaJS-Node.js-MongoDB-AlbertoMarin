@@ -25,6 +25,7 @@ var translator = require('myi18n');
  * @apiParam {Integer} [start] A partir de qué artículo realizar la consulta
  * @apiParam {Integer} [limit] Límite de anuncios a devolver
  * @apiParam {String} [sort] Criterio de ordenación. Puede ser uno o varios (separados por coma) de los siguientes valores... 'nombre', 'venta', 'precio', 'tags'
+ * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiHeader {String} x-access-token Token JWT de autenticación obtenido previamente
  * @apiExample Ejemplo de uso:
  * http://localhost:3000/api/v1/anuncios?tag=lifestyle&venta=true&nombre=youri&precio=0-5000­&start=0&limit=2&sort=precio
@@ -53,7 +54,7 @@ var translator = require('myi18n');
  *  }
  */
 router.get('/', function (req, res) {
-    var validReqQuery = ['tag', 'venta', 'nombre', 'precio', 'start', 'limit', 'sort'];
+    var validReqQuery = ['tag', 'venta', 'nombre', 'precio', 'start', 'limit', 'sort', 'lang'];
     var tag = req.query.tag;
     var venta = req.query.venta;
     var nombre = req.query.nombre;
@@ -183,6 +184,7 @@ router.get('/', function (req, res) {
 /**
  * @api {get} /anuncios/tags
  * @apiDescription Obtener el listado de tags
+ * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
  * http://localhost:3000/api/v1/anuncios/tags
  * @apiSuccessExample

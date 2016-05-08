@@ -18,6 +18,7 @@ var translator = require('myi18n');
 /**
  * @api {get} /usuarios
  * @apiDescription Obtener el listado de usuarios
+ * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
  * http://localhost:3000/api/v1/usuarios
  * @apiSuccessExample
@@ -61,6 +62,7 @@ router.get('/', function (req, res) {
  * @apiParam {String} nombre Nombre del usuario
  * @apiParam {String} email Email del usuario
  * @apiParam {String} clave Clave de acceso del usuario
+ * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
  * endpoint: http://localhost:3000/api/v1/usuarios
  *
@@ -114,6 +116,7 @@ router.post('/', function (req, res) {
  * @api {delete} /usuarios
  * @apiDescription Borrar un usuario
  * @apiParam {Integer} id Código del usuario
+ * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
  * http://localhost:3000/api/v1/usuarios?id=572e2b5aff1a74713815e6e2
  * @apiSuccessExample
@@ -145,6 +148,7 @@ router.delete('/', function (req, res) {
  * @apiDescription Autenticar a un usuario
  * @apiParam {String} email Email del usuario
  * @apiParam {String} clave Clave de acceso del usuario
+ * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
  * endpoint: http://localhost:3000/api/v1/usuarios/authenticate
  *
