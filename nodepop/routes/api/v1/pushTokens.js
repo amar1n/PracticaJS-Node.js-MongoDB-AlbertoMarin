@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var PushToken = mongoose.model('PushToken');
 
 var config = require('../../../local_config');
-var translator = require('myi18n');
+var translator = require('../../../lib/myi18n.js');
 
 /**
  * @api {post} /pushtokens

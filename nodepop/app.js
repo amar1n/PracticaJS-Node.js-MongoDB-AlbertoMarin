@@ -17,7 +17,7 @@ i18n.expressBind(app, {
 });
 
 // AMG: Conexion a la BBDD
-require('connectMongoose.js');
+require('./lib/connectMongoose.js');
 
 // AMG: Modelos
 require('./models/Usuarios');

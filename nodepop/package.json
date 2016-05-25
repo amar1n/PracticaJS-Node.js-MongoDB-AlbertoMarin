@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_PATH=lib DEBUG=nodepop:* nodemon ./bin/www",
+    "start": "DEBUG=nodepop:* nodemon ./bin/www",
     "installDB": "./../../../../../mongodb-osx-x86_64-3.2.5/bin/mongo tasks/install_db.js"
   },
   "dependencies": {

@@ -13,7 +13,7 @@ var config = require('../../../local_config');
 
 var bcrypt = require('bcrypt-nodejs');
 
-var translator = require('myi18n');
+var translator = require('../../../lib/myi18n.js');
 
 /**
  * @api {get} /usuarios

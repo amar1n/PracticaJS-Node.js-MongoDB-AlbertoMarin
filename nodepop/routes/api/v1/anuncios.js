@@ -10,10 +10,10 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Anuncio = mongoose.model('Anuncio');
 
-var jwtAuth = require('jwtAuth.js');
+var jwtAuth = require('../../../lib/jwtAuth.js');
 router.use(jwtAuth());
 
-var translator = require('myi18n');
+var translator = require('../../../lib/myi18n.js');
 
 /**
  * @api {get} /anuncios
