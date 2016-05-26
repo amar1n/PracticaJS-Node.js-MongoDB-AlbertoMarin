@@ -39,7 +39,7 @@ var translator = require('../../../lib/myi18n.js');
  *       "nombre": "Brutus Brunotti KiteWave Board 2016",
  *       "venta": true,
  *       "precio": 649,
- *       "foto": "http://nodepop.zampateste.com/images/anuncios/brunotti_butus.jpg",
+ *       "foto": "http://nodepop.zampateste.com/images/anuncios/brunotti_brutus.jpg",
  *       "tags": [
  *         "lifestyle"
  *       ]
