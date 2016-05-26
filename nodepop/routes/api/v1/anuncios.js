@@ -28,7 +28,7 @@ var translator = require('../../../lib/myi18n.js');
  * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiHeader {String} x-access-token Token JWT de autenticación obtenido previamente
  * @apiExample Ejemplo de uso:
- * http://localhost:3000/api/v1/anuncios?tag=lifestyle&venta=true&nombre=youri&precio=0-5000­&start=0&limit=2&sort=precio
+ * http://nodepop.zampateste.com/api/v1/anuncios?tag=lifestyle&venta=true&nombre=youri&precio=0-5000­&start=0&limit=2&sort=precio
  * @apiSuccessExample
  * HTTP/1.1 200 OK
  * {
@@ -39,7 +39,7 @@ var translator = require('../../../lib/myi18n.js');
  *       "nombre": "Brutus Brunotti KiteWave Board 2016",
  *       "venta": true,
  *       "precio": 649,
- *       "foto": "http://localhost:3000/images/anuncios/brunotti_butus.jpg",
+ *       "foto": "http://nodepop.zampateste.com/images/anuncios/brunotti_butus.jpg",
  *       "tags": [
  *         "lifestyle"
  *       ]
@@ -186,7 +186,7 @@ router.get('/', function (req, res) {
  * @apiDescription Obtener el listado de tags
  * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
- * http://localhost:3000/api/v1/anuncios/tags
+ * http://nodepop.zampateste.com/api/v1/anuncios/tags
  * @apiSuccessExample
  * HTTP/1.1 200 OK
  *  {

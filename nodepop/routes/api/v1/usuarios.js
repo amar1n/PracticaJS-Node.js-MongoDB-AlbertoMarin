@@ -20,7 +20,7 @@ var translator = require('../../../lib/myi18n.js');
  * @apiDescription Obtener el listado de usuarios
  * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
- * http://localhost:3000/api/v1/usuarios
+ * http://nodepop.zampateste.com/api/v1/usuarios
  * @apiSuccessExample
  * HTTP/1.1 200 OK
  *  {
@@ -64,7 +64,7 @@ router.get('/', function (req, res) {
  * @apiParam {String} clave Clave de acceso del usuario
  * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
- * endpoint: http://localhost:3000/api/v1/usuarios
+ * endpoint: http://nodepop.zampateste.com/api/v1/usuarios
  *
  * body:
  * {
@@ -118,7 +118,7 @@ router.post('/', function (req, res) {
  * @apiParam {Integer} id Código del usuario
  * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
- * http://localhost:3000/api/v1/usuarios?id=572e2b5aff1a74713815e6e2
+ * http://nodepop.zampateste.com/api/v1/usuarios?id=572e2b5aff1a74713815e6e2
  * @apiSuccessExample
  * HTTP/1.1 200 OK
  *  {
@@ -150,7 +150,7 @@ router.delete('/', function (req, res) {
  * @apiParam {String} clave Clave de acceso del usuario
  * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
- * endpoint: http://localhost:3000/api/v1/usuarios/authenticate
+ * endpoint: http://nodepop.zampateste.com/api/v1/usuarios/authenticate
  *
  * body:
  * {

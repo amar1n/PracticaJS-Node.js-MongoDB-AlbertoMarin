@@ -3,7 +3,7 @@ module.exports = {
         secret: 'nodepop-cualquiervaina-popedon',
         expires: '1h'
     },
-    public_url: 'http://localhost:3000',
+    public_url: 'http://nodepop.zampateste.com',
     errors: {
         error400: 'ERROR-400',
         error401: 'ERROR-401',

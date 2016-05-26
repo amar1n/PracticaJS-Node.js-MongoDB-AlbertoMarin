@@ -19,7 +19,7 @@ var translator = require('../../../lib/myi18n.js');
  * @apiParam {String} usuario Usuario asociado
  * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
- * endpoint: http://localhost:3000/api/v1/pushtokens
+ * endpoint: http://nodepop.zampateste.com/api/v1/pushtokens
  *
  * body:
  * {
@@ -73,7 +73,7 @@ router.post('/', function (req, res) {
  * @apiParam {String} usuario Usuario asociado
  * @apiParam {String} [lang] Idioma para mensaje de error. Puede ser uno de los siguientes valores... 'es', 'en'
  * @apiExample Ejemplo de uso:
- * endpoint: http://localhost:3000/api/v1/pushtokens
+ * endpoint: http://nodepop.zampateste.com/api/v1/pushtokens
  *
  * body:
  * {
